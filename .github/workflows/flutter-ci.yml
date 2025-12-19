@@ -10,6 +10,10 @@ jobs:
   analyze-and-test:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: fairpay
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
